@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARC Annotation | High-Precision AI Data Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #f0f4ff, transparent);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <!-- Placeholder for ARC Logo -->
+                <div class="flex items-center">
+                    <img src="images/logo.png" alt="ARC Annotation Logo" class="h-12 w-auto object-contain" onerror="this.onerror=null; this.src='https://via.placeholder.com/50x50/1e293b/ffffff?text=A';">
+                    <div class="ml-3 flex flex-col justify-center">
+                        <span class="text-xl font-bold tracking-tight text-[#1e293b] leading-none">ARC</span>
+                        <span class="text-xs font-bold text-blue-600 tracking-[0.2em] uppercase">Annotation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#recruitment" class="hover:text-blue-600 transition">Hiring</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <a href="https://discord.gg/Y9g9F3AY8g" target="_blank" class="bg-[#1e293b] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-100">
+                Join Discord
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 md:pt-48 md:pb-32 hero-gradient px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-6">
+                Driving AI Innovation Through <br>
+                <span class="text-blue-600">Expert Image Annotation</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-10">
+                We bridge the gap between human intelligence and machine learning with accuracy and scale. Delivering high-precision datasets for the next generation of AI.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="#recruitment" class="w-full md:w-auto px-8 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-blue-200 transition">Explore Careers</a>
+                <a href="#services" class="w-full md:w-auto px-8 py-4 bg-white border border-slate-200 text-slate-700 rounded-xl font-bold text-lg hover:bg-slate-50 transition">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-4">Precision Services</h2>
+                <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50/50 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Image Annotation</h3>
+                    <p class="text-slate-600 leading-relaxed">Bounding boxes, polygon masking, and semantic segmentation for autonomous systems and computer vision.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50/50 card-hover">
+                    <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 text-purple-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Data Labeling</h3>
+                    <p class="text-slate-600 leading-relaxed">Manual verification and multi-class classification ensuring your models train on high-quality, verified labels.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50/50 card-hover">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Quality Assurance</h3>
+                    <p class="text-slate-600 leading-relaxed">Multi-tier audit system with human-in-the-loop validation to maintain 99%+ accuracy levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recruitment Section -->
+    <section id="recruitment" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-blue-400 font-bold uppercase tracking-widest text-sm">We are Hiring</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-8">Join Our Remote <br> AI Data Team</h2>
+                <p class="text-slate-400 text-lg mb-10 leading-relaxed">
+                    Build your career in the world of AI from the comfort of your home. We are looking for dedicated Image Annotators to join our growing branch.
+                </p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">🚀</div>
+                        <div>
+                            <h4 class="font-bold text-xl">Flexible Timing</h4>
+                            <p class="text-slate-400">Manage your own schedule with work-from-home freedom.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">💰</div>
+                        <div>
+                            <h4 class="font-bold text-xl">Performance Salary</h4>
+                            <p class="text-slate-400">Tk. 5,000 - 10,000 per 15 days based on your efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white text-slate-900 p-8 md:p-12 rounded-[2rem] shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4">
+                    <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Requirements</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-6">Technical Checklist</h3>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center space-x-3">
+                        <svg class="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span class="font-medium">Desktop or Laptop (i3 and above)</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <svg class="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span class="font-medium">Minimum 8 GB RAM</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <svg class="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span class="font-medium">Windows 10 installed</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <svg class="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span class="font-medium">Reliable Internet Connection</span>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <p class="text-sm text-slate-400 mb-4">Scan the QR code to Apply</p>
+                    <div class="w-40 h-40 bg-slate-100 mx-auto rounded-2xl flex items-center justify-center mb-6 border-2 border-dashed border-slate-300">
+                        <!-- Replace with actual QR Code Image -->
+                        <span class="text-xs text-center text-slate-500 font-medium">QR CODE <br> <img src="images/qr.png" alt="QR Code" class="w-32 h-32 mx-auto"></span>
+                    </div>
+                    <a href="https://forms.gle/hPfQiXzBHWV93GtU8 " class="block w-full py-4 bg-[#5865F2] text-white rounded-xl font-bold hover:shadow-xl transition shadow-blue-200">
+                        Apply Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- Team Section - CSS is now embedded within the section for easy copy-paste -->
+    <section id="team" class="py-24 bg-white px-6">
+        <style>
+            /* Specific Styles for Team Section to make it portable */
+            .team-member-img {
+                filter: grayscale(100%);
+                transition: all 0.5s ease-in-out;
+            }
+            .member-group:hover .team-member-img {
+                filter: grayscale(0%);
+                transform: scale(1.1);
+            }
+            .linkedin-btn {
+                opacity: 0;
+                transform: translateY(10px);
+                transition: all 0.3s ease;
+            }
+            .member-group:hover .linkedin-btn {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .member-overlay {
+                background: rgba(30, 41, 59, 0.4);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            .member-group:hover .member-overlay {
+                opacity: 1;
+            }
+        </style>
+
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">Our Leadership</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mt-4 mb-16">Face behind ARC Annotation</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-4">
+                <!-- Member 1: Saumik Dey -->
+                <div class="member-group flex flex-col items-center group">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 mb-4 rounded-full overflow-hidden shadow-lg border-2 border-slate-50">
+                        <img src="images/Saumik.png" alt="Saumik Dey" class="team-member-img w-full h-full object-cover">
+                        <!-- Hover Overlay -->
+                        <div class="member-overlay absolute inset-0 flex items-center justify-center">
+                            <a href="https://www.linkedin.com/in/saumik-dey-730570387/" target="_blank" class="linkedin-btn bg-white p-3 rounded-full text-[#0077b5] shadow-2xl hover:scale-110 transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition">Saumik Dey</h4>
+                    <p class="text-blue-600 text-[10px] md:text-xs font-bold uppercase tracking-widest">Regional Manager</p>
+                </div>
+
+                <!-- Member 2: Altaf Hossain -->
+                <div class="member-group flex flex-col items-center group">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 mb-4 rounded-full overflow-hidden shadow-lg border-2 border-slate-50">
+                        <img src="images/Altaf.png" alt="Altaf Hossain" class="team-member-img w-full h-full object-cover">
+                        <div class="member-overlay absolute inset-0 flex items-center justify-center">
+                            <a href="ALTAF_LINKEDIN_URL" target="_blank" class="linkedin-btn bg-white p-3 rounded-full text-[#0077b5] shadow-2xl hover:scale-110 transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition">Altaf Hossain</h4>
+                    <p class="text-blue-600 text-[10px] md:text-xs font-bold uppercase tracking-widest">QC, Checker</p>
+                </div>
+
+                <!-- Member 3: Sadman Sakib -->
+                <div class="member-group flex flex-col items-center group">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 mb-4 rounded-full overflow-hidden shadow-lg border-2 border-slate-50">
+                        <img src="images/Sadman.png" alt="Sadman Sakib" class="team-member-img w-full h-full object-cover">
+                        <div class="member-overlay absolute inset-0 flex items-center justify-center">
+                            <a href="https://www.linkedin.com/in/sadmansakibfahim/" target="_blank" class="linkedin-btn bg-white p-3 rounded-full text-[#0077b5] shadow-2xl hover:scale-110 transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition">Sadman Sakib</h4>
+                    <p class="text-blue-600 text-[10px] md:text-xs font-bold uppercase tracking-widest">Trainer, Checker</p>
+                </div>
+
+                <!-- Member 4: Tanjidul Haque -->
+                <div class="member-group flex flex-col items-center group">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 mb-4 rounded-full overflow-hidden shadow-lg border-2 border-slate-50">
+                        <img src="images/Tanjid.png" alt="Tanjidul Haque" class="team-member-img w-full h-full object-cover">
+                        <div class="member-overlay absolute inset-0 flex items-center justify-center">
+                            <a href="TANJID_LINKEDIN_URL" target="_blank" class="linkedin-btn bg-white p-3 rounded-full text-[#0077b5] shadow-2xl hover:scale-110 transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition">Tanjidul Haque</h4>
+                    <p class="text-blue-600 text-[10px] md:text-xs font-bold uppercase tracking-widest">Admin</p>
+                </div>
+
+                <!-- Member 5: Raihan Kabir -->
+                <div class="member-group flex flex-col items-center group">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 mb-4 rounded-full overflow-hidden shadow-lg border-2 border-slate-50">
+                        <img src="images/rayhan.png" alt="Raihan Kabir" class="team-member-img w-full h-full object-cover">
+                        <div class="member-overlay absolute inset-0 flex items-center justify-center">
+                            <a href="https://bd.linkedin.com/in/aminul-kabir-raihan" target="_blank" class="linkedin-btn bg-white p-3 rounded-full text-[#0077b5] shadow-2xl hover:scale-110 transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition">Raihan Kabir</h4>
+                    <p class="text-blue-600 text-[10px] md:text-xs font-bold uppercase tracking-widest">Trial Admin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer  -->
+    <footer id="contact" class="py-12 bg-white border-t border-slate-100 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col items-center md:flex-row md:justify-between text-center md:text-left">
+            
+            <!-- Branding Section -->
+            <div class="mb-10 md:mb-0">
+                <div class="flex flex-col items-center md:items-start space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="images/logo.png" alt="ARC Annotation Logo" class="h-12 w-auto object-contain" onerror="this.onerror=null; this.src='https://via.placeholder.com/50x50/1e293b/ffffff?text=A';">
+                        <div class="flex flex-col justify-center text-left">
+                            <span class="text-xl font-bold tracking-tight text-[#1e293b] leading-none">ARC</span>
+                            <span class="text-xs font-bold text-blue-600 tracking-[0.2em] uppercase">Annotation</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-500 text-sm max-w-xs">Empowering AI with human-labeled precision. High-quality data at scale.</p>
+                </div>
+            </div>
+
+            <!-- Social Links & Contact -->
+            <div class="flex flex-col items-center md:items-end">
+                <div class="text-center md:text-right mb-6">
+                    <p class="text-slate-900 font-bold mb-1">Contact Us</p>
+                    <a href="mailto:arcannotation@gmail.com" class="text-blue-600 hover:underline font-medium text-lg">arcannotation@gmail.com</a>
+                </div>
+
+                <!-- Clickable Social Icons (Positioned below Email) -->
+                <div class="flex items-center space-x-4 mb-8">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/arcannotation/" target="_blank" class="w-11 h-11 flex items-center justify-center bg-slate-50 rounded-xl text-slate-600 hover:text-white hover:bg-[#0077b5] transition-all duration-300 transform hover:-translate-y-1 shadow-sm" title="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@ARC-Annotation-BD69" target="_blank" class="w-11 h-11 flex items-center justify-center bg-slate-50 rounded-xl text-slate-600 hover:text-white hover:bg-[#FF0000] transition-all duration-300 transform hover:-translate-y-1 shadow-sm" title="YouTube">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
+
+                <p class="text-slate-400 text-[10px] md:text-xs uppercase tracking-widest">&copy; 2026 ARC Annotation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
