@@ -19,6 +19,12 @@
             transform: translateY(-5px);
             transition: all 0.3s ease;
         }
+        .next-response {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #64748b;
+}
+
     </style>
 </head>
 <body class="bg-white text-slate-900 overflow-x-hidden">
@@ -167,6 +173,9 @@
                     <a href="https://forms.gle/hPfQiXzBHWV93GtU8 " class="block w-full py-4 bg-[#5865F2] text-white rounded-xl font-bold hover:shadow-xl transition shadow-blue-200">
                         Apply Now
                     </a>
+                    <div class="next-response">
+                      Next response will be out <span id="next-response-date"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -323,6 +332,42 @@
             </div>
         </div>
     </footer>
+<script>
+  (function () {
+    function pad2(n) {
+      return n < 10 ? "0" + n : String(n);
+    }
+
+    function formatDDMMYY(date) {
+      var dd = pad2(date.getDate());
+      var mm = pad2(date.getMonth() + 1);
+      var yy = String(date.getFullYear()).slice(-2);
+      return dd + "/" + mm + "/" + yy;
+    }
+
+    function nextResponseDate(now) {
+      var year = now.getFullYear();
+      var monthIndex = now.getMonth();
+      var day = now.getDate();
+      var lastDay = new Date(year, monthIndex + 1, 0).getDate();
+      var secondDay = Math.min(30, lastDay);
+
+      if (day <= 15) {
+        return new Date(year, monthIndex, 15);
+      }
+      if (day <= secondDay) {
+        return new Date(year, monthIndex, secondDay);
+      }
+      return new Date(year, monthIndex + 1, 15);
+    }
+
+    var target = document.getElementById("next-response-date");
+    if (!target) return;
+    var now = new Date();
+    var nextDate = nextResponseDate(now);
+    target.textContent = formatDDMMYY(nextDate);
+  })();
+</script>
 
 </body>
 </html>
