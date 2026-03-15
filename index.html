@@ -352,10 +352,10 @@
       var lastDay = new Date(year, monthIndex + 1, 0).getDate();
       var secondDay = Math.min(30, lastDay);
 
-      if (day <= 15) {
+      if (day < 15) {
         return new Date(year, monthIndex, 15);
       }
-      if (day <= secondDay) {
+      if (day < secondDay) {
         return new Date(year, monthIndex, secondDay);
       }
       return new Date(year, monthIndex + 1, 15);
@@ -368,6 +368,7 @@
     target.textContent = formatDDMMYY(nextDate);
   })();
 </script>
+
 
 </body>
 </html>
